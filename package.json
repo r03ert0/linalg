@@ -1,0 +1,23 @@
+{
+  "name": "linalg",
+  "version": "0.0.1",
+  "description": "Linear algebra functions",
+  "main": "linalg.js",
+  "scripts": {
+    "test": "mocha linalg-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://r03ert0@github.com/r03ert0/linalg.git"
+  },
+  "keywords": [
+    "Linear",
+    "algebra"
+  ],
+  "author": "Roberto Toro <rto@braincatalogue.org> (http://neuroanatomy.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r03ert0/linalg/issues"
+  },
+  "homepage": "https://github.com/r03ert0/linalg#readme"
+}
