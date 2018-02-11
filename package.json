@@ -1,14 +1,14 @@
 {
-  "name": "linalg",
+  "name": "linalg3",
   "version": "0.0.1",
-  "description": "Linear algebra functions",
-  "main": "linalg.js",
+  "description": "NPM module with linear algebra functions in 3D.",
+  "main": "linalg3.js",
   "scripts": {
-    "test": "mocha linalg-test.js"
+    "test": "mocha linalg3-test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://r03ert0@github.com/r03ert0/linalg.git"
+    "url": "git+https://r03ert0@github.com/r03ert0/linalg3.git"
   },
   "keywords": [
     "Linear",
@@ -17,7 +17,7 @@
   "author": "Roberto Toro <rto@braincatalogue.org> (http://neuroanatomy.github.io)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/r03ert0/linalg/issues"
+    "url": "https://github.com/r03ert0/linalg3/issues"
   },
-  "homepage": "https://github.com/r03ert0/linalg#readme"
+  "homepage": "https://github.com/r03ert0/linalg3#readme"
 }
