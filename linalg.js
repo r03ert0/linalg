@@ -1,10 +1,10 @@
-var EPSILON = 1e-10;
+exports.EPSILON = 1e-10;
 
 /**
  * @function norm3D3D
  * @desc Vector norm
  */
-function norm3D(a) {
+exports.norm3D = function norm3D(a) {
     return Math.sqrt(a[0]*a[0] + a[1]*a[1] + a[2]*a[2]);
 }
 
@@ -12,7 +12,7 @@ function norm3D(a) {
  * @function add3D
  * @desc Vector addition
  */
-function add3D(a,b) {
+exports.add3D = function add3D(a,b) {
     return [a[0]+b[0], a[1]+b[1], a[2]+b[2]];
 }
 
@@ -20,7 +20,7 @@ function add3D(a,b) {
  * @function sub3D
  * @desc Vector subtraction
  */
-function sub3D(a,b) {
+exports.sub3D = function sub3D(a,b) {
     return [a[0]-b[0], a[1]-b[1], a[2]-b[2]];
 }
 
@@ -28,7 +28,7 @@ function sub3D(a,b) {
  * @function sca3D
  * @desc Vector scaling
  */
-function sca3D(a,t) {
+exports.sca3D = function sca3D(a,t) {
     return [a[0]*t, a[1]*t, a[2]*t];
 }
 
@@ -36,7 +36,7 @@ function sca3D(a,t) {
  * @function dot3D
  * @desc Vector dot product
  */
-function dot3D(a,b) {
+exports.dot3D = function dot3D(a,b) {
     return a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
 }
 
@@ -44,7 +44,7 @@ function dot3D(a,b) {
   * @function cross3D
   * @desc Cross product
   */
-function cross3D(a, b) {
+exports.cross3D = function cross3D(a, b) {
     return [a[1]*b[2]-a[2]*b[1], a[2]*b[0]-a[0]*b[2], a[0]*b[1]-a[1]*b[0]];
 }
 
@@ -52,7 +52,7 @@ function cross3D(a, b) {
  * @function direction
  * @desc Normalise vector to unit norm
  */
-function direction(p) {
+exports.direction = function direction(p) {
     const n = Math.sqrt(p.reduce((sum,s)=>sum+s*s, 0));
     let result = p.map((o)=>o/n);
     return result;
@@ -62,7 +62,7 @@ function direction(p) {
   * @function multiply
   * @desc multiplication of matrices a and b
   */
-function multiply(a, b) {
+exports.multiply = function multiply(a, b) {
     let r,c,i;
     const am=a.length, an=a[0].length;
     const bm=b.length, bn=b[0].length;
@@ -87,7 +87,7 @@ function multiply(a, b) {
   * @function transpose
   * @desc transpose of matrix a
   */
-function transpose(a) {
+exports.transpose = function transpose(a) {
     let i, j, r = new Array(a[0].length).fill(0);
     r=r.map(o=>new Array(a.length).fill(0));
     for(i=0;i<a.length;i++)
@@ -96,5 +96,4 @@ function transpose(a) {
     }
     return r;
 }
-
 
